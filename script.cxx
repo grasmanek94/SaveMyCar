@@ -464,14 +464,17 @@ public:
 
 	void Tick()
 	{
-		size_t time_now = GetTickCount();
-		if (time_now < timer)
+		if (timer)
 		{
-			ShowThisFrame();
-		}
-		else
-		{
-			End();
+			size_t time_now = GetTickCount();
+			if (time_now < timer)
+			{
+				ShowThisFrame();
+			}
+			else
+			{
+				End();
+			}
 		}
 	}
 
