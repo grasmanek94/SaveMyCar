@@ -551,7 +551,7 @@ void OnKeyStateChange(bool pressed, unsigned char vkey)
 						}
 						else
 						{
-							cht->ShowTimedText("There was a problem while loading your vehicle, please make sure that you have saved a vehicle earlies in this slot.", 4000);
+							cht->ShowTimedText("There was a problem while loading your vehicle, please make sure that you have saved a vehicle in this slot.", 4000);
 						}
 					}
 				}
